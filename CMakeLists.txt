@@ -8,6 +8,7 @@ include_directories(${to_lab_MISSION_DIR}/fsw/platform_inc)
 include_directories(${sample_app_MISSION_DIR}/fsw/platform_inc)
 include_directories(${blinky_MISSION_DIR}/fsw/platform_inc)
 include_directories(${altitude_app_MISSION_DIR}/fsw/platform_inc)
+include_directories(${rf_tlm_MISSION_DIR}/fsw/platform_inc)
 
 # Create the app module
 add_cfe_app(sch_lab fsw/src/sch_lab_app.c)
