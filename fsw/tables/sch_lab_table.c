@@ -28,7 +28,7 @@
 
 #include "sample_app_msgids.h"
 #include "blinky_msgids.h"
-#include "altitude_app_msgids.h"
+#include "imu_app_msgids.h"
 #include "rf_tlm_msgids.h"
 
 #if 0
@@ -60,8 +60,8 @@ SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.TickRate = 1,
                                                  {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_SEND_HK_MID), 4, 0},
                                                  {CFE_SB_MSGID_WRAP_VALUE(BLINKY_SEND_HK_MID), 4, 0},
                                                  {CFE_SB_MSGID_WRAP_VALUE(BLINKY_SEND_RF_MID), 4, 0},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(ALTITUDE_APP_SEND_HK_MID), 4, 0},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(ALTITUDE_APP_SEND_RF_MID), 4, 0},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(IMU_APP_SEND_HK_MID), 4, 0},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(IMU_APP_SEND_RF_MID), 4, 0},
                                                  {CFE_SB_MSGID_WRAP_VALUE(RF_TLM_SEND_HK_MID), 4, 0},
 #if 0
                 {CFE_SB_MSGID_WRAP_VALUE(SC_SEND_HK_MID),       4, 0},
