@@ -30,6 +30,7 @@
 #include "imu_app_msgids.h"
 #include "temp_app_msgids.h"
 #include "altitude_app_msgids.h"
+#include "gps_app_msgids.h"
 #include "rf_tlm_msgids.h"
 
 #if 0
@@ -76,6 +77,9 @@ SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.TickRate = 1,
                                                  {CFE_SB_MSGID_WRAP_VALUE(TEMP_APP_SEND_HK_MID), 4, 0},
                                                  {CFE_SB_MSGID_WRAP_VALUE(TEMP_APP_SEND_RF_MID), 4, 0},
 
+                                                 {CFE_SB_MSGID_WRAP_VALUE(GPS_APP_READ_MID), 4, 0},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(GPS_APP_SEND_HK_MID), 4, 0},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(GPS_APP_SEND_RF_MID), 4, 0},
 
                                                  {CFE_SB_MSGID_WRAP_VALUE(RF_TLM_SEND_HK_MID), 4, 0},
 #if 0
